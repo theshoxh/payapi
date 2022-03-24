@@ -1,0 +1,42 @@
+.form{
+    max-width: 445px;
+    min-height: 48px;
+    border-radius: 24px;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    &__email{
+        border: 0px solid;
+        padding-left: 27px;
+        color: $title-color;
+        &::placeholder{
+            font-weight: 700;
+            color: #36536B;
+            opacity: 0.5;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__submit{
+        width: 173px;
+        height: 48px;
+        border-radius: 24px;
+        background: #BA4270;
+        border: 0 solid;
+        font-weight: bold;
+        letter-spacing: -0.115385px;
+
+        color: #FBFCFE;
+
+        &:hover{
+            background: #DA6D97;
+        }
+        &:active{
+            opacity: 0.5;
+        }
+    }
+}

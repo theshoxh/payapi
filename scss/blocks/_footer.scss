@@ -1,0 +1,108 @@
+.footer{
+    width: 100%;
+    background: #1B262F;
+    background-image: url(../img/Bitmap-footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 0 right 0;
+    &__block{
+        display: flex;
+        align-items: center;
+        padding: 31px 0;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        margin-right: 64px;
+    }
+
+    &__list{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item{
+        list-style: none;
+        margin-right: 40px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    &__links{
+        text-decoration: none;
+        font-weight: 700;
+        color: #FBFCFE;
+        opacity: 0.7;
+        transition: 0.3 ease;
+        transition: 0.3 ease;
+        &:hover{
+            opacity: 1;
+        }
+        &:active{
+            color: #DA6D97;
+        }
+    }
+
+    &__social{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-left: auto;
+        &__item{
+            list-style: none;
+            margin-left: 24px;
+            &:first-child{
+                margin: 0;
+            }
+            
+        }
+    }
+
+    &__icons{
+        color: #FBFCFE;
+        transition: 0.3 ease;
+        &:hover{
+            color: white;
+            opacity: 1;
+        }
+        &:active{
+            color: #DA6D97;
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .footer{
+        background-image: url(../img/Bitmap-footer-mobile.png);
+    }
+    .footer__block{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    .footer__social, .footer__item, .footer__logo{
+        margin: 0;
+    }
+
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__item{
+        margin-bottom: 31px;
+    }
+
+    .footer__logo{
+        margin-bottom: 40px;
+    }
+    .footer__social{
+        margin-top: 40px;
+    }
+}
+
